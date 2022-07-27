@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>friends</display-name>
+  <welcome-file-list>
+
+    <welcome-file>IndexPublicController</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>IndexPublicController</servlet-name>
+    <servlet-class>controller.IndexPublicController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>IndexPublicController</servlet-name>
+    <url-pattern>/trang-chu</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>IndexPublicDetailController</servlet-name>
+    <servlet-class>controller.IndexPublicDetailController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>IndexPublicDetailController</servlet-name>
+    <url-pattern>/chi-tiet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>PublicCatController</servlet-name>
+    <servlet-class>controller.PublicCatController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PublicCatController</servlet-name>
+    <url-pattern>/danh-muc</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SearchController</servlet-name>
+    <servlet-class>controller.SearchController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchController</servlet-name>
+    <url-pattern>/tim-kiem</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ContactController</servlet-name>
+    <servlet-class>controller.ContactController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContactController</servlet-name>
+    <url-pattern>/lien-he</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
